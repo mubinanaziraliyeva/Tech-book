@@ -1,0 +1,367 @@
+/* martian-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Martian Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/martian-mono-v6-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* martian-mono-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Martian Mono";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/martian-mono-v6-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* martian-mono-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Martian Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/martian-mono-v6-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* START      ROOT      START */
+:root {
+  /* Color */
+  --neutral-900: #062630;
+  --neutral-700: #385159;
+  --neutral-200: #e6e1df;
+  --neutral-100: #faf5f3;
+  --neutral-0: #ffffff;
+
+  --light-salmon-500: #fea36f;
+  --light-salmon-100: #ffe2d1;
+  --light-salmon-50: #fff5ef;
+
+  --text-gradient: linear-gradient(107.24deg, #fea36f -11.37%, #062630 61.84%);
+  --gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+  /* Font-weight */
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+  /* Font-size */
+  --fs-text-preset1: 62px;
+  --fs-text-preset2: 38px;
+  --fs-text-preset3: 50px;
+  --fs-text-preset4: 34px;
+  --fs-text-preset5: 24px;
+  --fs-text-preset6: 20px;
+  --fs-text-preset7: 18px;
+  --fs-text-preset8: 14px;
+  --fs-text-preset9: 16px;
+  /* Line-height */
+  --lh-text-preset1: 1.4;
+  --lh-text-preset2: 1.3;
+  --lh-text-preset3: 1.2;
+  --lh-text-preset4: 1.1;
+  /* Letter-spacing */
+  --ls-text-preset1: -2px;
+  --ls-text-preset2: -1px;
+  --ls-text-preset3: -0.5px;
+  --ls-text-preset4: -4px;
+  /* Spaces */
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  /* Radius */
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-full: 999px;
+}
+/* END      ROOT      END */
+/* GLOBAL STYLES START */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+img {
+  display: block;
+  object-fit: cover;
+}
+html {
+  height: 100%;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+main {
+  flex-grow: 1;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Martian Mono", monospace;
+  font-weight: var(--fw-400);
+  font-size: var(--fs-text-preset6);
+  line-height: var(--lh-text-preset1);
+  letter-spacing: var(--ls-text-preset3);
+}
+/* GLOBAL STYLES END */
+.container {
+  width: 100%;
+  max-width: 1244px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-32); /* 30px */
+  padding-right: var(--space-32); /* 30px */
+}
+
+/* HEADER START */
+.header {
+  padding-top: var(--space-32);
+  padding-bottom: var(--space-80);
+  background-image: url("../image/Pattern\ Light.svg"), url("../image/Glow.svg");
+
+  background-position: center, bottom -226px right -236px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, 684px;
+  background-color: var(--neutral-100);
+  margin-bottom: 120px;
+}
+.logo-container {
+}
+
+.logo-link {
+}
+.logo-img {
+  margin-bottom: var(--space-80);
+}
+.hero-container {
+  display: flex;
+  gap: var(--space-64);
+}
+.hero-content {
+}
+.hero-title {
+  max-width: 570px;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-text-preset1);
+  line-height: var(--lh-text-preset3);
+  letter-spacing: var(--ls-text-preset1);
+  display: inline-block;
+
+  background: linear-gradient(107.24deg, #fea36f -11.37%, #062630 61.84%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: var(--space-24);
+}
+.hero-desc {
+  max-width: 570px;
+  font-family: "Inter", sans-serif;
+  font-weight: var(--fw-400);
+  color: var(--neutral-700);
+  margin-bottom: var(--space-24);
+}
+.hero-btn {
+  display: flex;
+  gap: var(--space-16);
+  font-weight: var(--fw-600);
+  font-size: var(--fs-text-preset9);
+  line-height: var(--lh-text-preset2);
+  letter-spacing: var(--ls-text-preset2);
+  border: 2px solid var(--neutral-900);
+  border-radius: var(--radius-8);
+  background-color: var(--light-salmon-50);
+  padding: var(--space-20) var(--space-24);
+  margin-bottom: var(--space-20);
+  &:hover {
+    background: var(--gradient);
+  }
+}
+.btn {
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-arrow-img {
+}
+.testimonial {
+  display: flex;
+  gap: var(--space-16);
+}
+.testimonial-img {
+}
+.rating {
+}
+.rating-img {
+  margin-bottom: var(--space-4);
+}
+.rating-desc {
+  font-family: "Inter", sans-serif;
+  font-weight: var(--fw-400);
+  font-size: var(--fs-text-preset8);
+  line-height: var(--lh-text-preset3);
+  letter-spacing: var(--ls-text-preset2);
+  color: var(--neutral-700);
+}
+.hero-img {
+  width: 536px;
+  height: 606px;
+  flex-shrink: 0;
+}
+.club-img {
+  border-radius: var(--radius-10);
+}
+/* HEADER END */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .logo-container {
+    margin-bottom: 64px;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .club-img {
+    width: 500px;
+    height: 600px;
+  }
+}
+@media (max-width: 540px) {
+  .club-img {
+    width: 400px;
+    height: 500px;
+  }
+}
+@media (max-width: 450px) {
+  .club-img {
+    width: 350px;
+    height: 460px;
+  }
+}
+
+@media (max-width: 390px) {
+  .logo-container {
+    margin-bottom: 48px;
+  }
+  .hero-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .hero-title {
+    font-size: var(--fs-text-preset2);
+  }
+  .hero-btn {
+    font-size: var(--fs-text-preset9);
+    padding: 20px 23px;
+    white-space: nowrap;
+  }
+  .club-img {
+    width: 343px;
+    height: 371px;
+  }
+}
+
+/* TOGETHER START */
+.together {
+  padding-bottom: 120px;
+}
+.together-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-80);
+}
+
+.together-img {
+}
+.together-content {
+}
+.content-title {
+  font-weight: var(--fw-600);
+  font-size: var(--fs-text-preset3);
+  line-height: var(--lh-text-preset2);
+  letter-spacing: var(--ls-text-preset1);
+  color: var(--neutral-900);
+  margin-bottom: var(--space-32); /* 34 */
+}
+.content-list {
+}
+.content-list-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12); /* gap=14px */
+
+  font-family: "Inter", sans-serif;
+  color: var(--neutral-700);
+  margin-bottom: var(--space-24);
+}
+.item-img {
+}
+.item-desc {
+}
+/* TOGETHER END */
+
+/* Phone */
+@media (max-width: 600px) {
+  .content-title {
+    font-size: var(--fs-text-preset4);
+  }
+  .together-container {
+    flex-direction: column-reverse;
+    gap: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .together-img {
+    width: 343px;
+    height: 318.5px;
+  }
+}
