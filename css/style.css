@@ -190,11 +190,6 @@ body {
 .logo-container {
   padding-top: 32px;
 }
-
-.logo-link {
-}
-.logo-img {
-}
 .hero-container {
   display: flex;
   align-items: center;
@@ -246,16 +241,9 @@ body {
   box-shadow: 0 0 0 3px #ffffff,
     /* ichki oq “border” */ 0 0 0 5px var(--neutral-700);
 }
-
-.btn-arrow-img {
-}
 .testimonial {
   display: flex;
   gap: var(--space-16);
-}
-.testimonial-img {
-}
-.rating {
 }
 .rating-img {
   margin-bottom: var(--space-4);
@@ -277,6 +265,12 @@ body {
 /* HEADER END */
 
 /* Tablet */
+@media (max-width: 1170px) {
+  .club-img {
+    width: 416px;
+    height: 480px;
+  }
+}
 @media (max-width: 1024px) {
   .logo-container {
     margin-bottom: 64px;
@@ -296,6 +290,8 @@ body {
     margin-bottom: 64px;
   }
   .club-img {
+    width: 536px;
+    height: 606px;
     margin-bottom: 75px;
   }
 }
@@ -405,10 +401,6 @@ body {
 
   font-family: "Inter", sans-serif;
   color: var(--neutral-700);
-}
-.item-img {
-}
-.item-desc {
 }
 /* TOGETHER END */
 
@@ -607,8 +599,6 @@ body {
 }
 
 /* JOURNEY START */
-.journey {
-}
 .journey-container {
   display: flex;
   flex-direction: column;
@@ -639,8 +629,6 @@ body {
   display: flex;
 
   gap: var(--space-64); /* 60px */
-}
-.journey-list-item {
 }
 .item-wrap {
   display: flex;
@@ -675,15 +663,11 @@ body {
 }
 
 /* SUBSCRIBE START */
-.subscribe {
-}
 .subscribe-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 120px;
-}
-.container {
 }
 .subscrbe-title {
   font-weight: var(--fw-600);
@@ -800,8 +784,6 @@ body {
 }
 
 /* FEEDBACK START */
-.feedback {
-}
 .feedback-container {
   display: flex;
   align-items: center;
@@ -809,9 +791,6 @@ body {
   flex-direction: column;
   gap: 32px;
   margin-bottom: 120px;
-}
-
-.rating-icons {
 }
 .feedback-desc {
   max-width: 970px;
@@ -881,21 +860,11 @@ body {
   box-shadow: 0 0 0 3px var(--neutral-900) /* ichki “border” */ 0 0 0 5px
     var(--neutral-200); /* tashqi halo */
 }
-.btn-arrow-img {
-}
-.footer-arrow {
-}
 .rating-footer {
   color: var(--neutral-100);
 }
 .testimonial {
   margin-bottom: 64px;
-}
-.rating {
-}
-.rating-img {
-}
-.rating-desc {
 }
 .footer-bottom {
   width: 100%;
